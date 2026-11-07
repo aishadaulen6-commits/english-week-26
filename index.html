@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10120e">
+<meta name="description" content="ENGLISH WEEK ’26 — A school-wide language festival at D. Қонаев атындағы жалпы білім беретін мектеп, 9–20 November 2026.">
+<title>ENGLISH WEEK ’26 — Language Festival</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#10120e;--panel:#171a14;--panel2:#1d2118;--ink:#f3f2e9;--muted:#a5a99a;--lime:#d6ff3f;--line:rgba(243,242,233,.16);--olive:#66733a;--mono:"DM Mono",monospace;--display:"Space Grotesk",sans-serif;--body:"Manrope",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}::selection{background:var(--lime);color:#111}
+.noise{position:fixed;inset:0;pointer-events:none;z-index:20;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
+.nav{height:76px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:absolute;z-index:10;top:0;width:100%}.brand{font-size:12px;font-weight:800;letter-spacing:.04em;max-width:250px;line-height:1.4}.nav-right{display:flex;align-items:center;gap:30px;font:10px var(--mono);letter-spacing:.12em;color:var(--muted)}.nav-right a{transition:color .2s}.nav-right a:hover{color:var(--lime)}.nav-index{color:var(--lime)}
+.hero{min-height:100svh;position:relative;display:flex;flex-direction:column;justify-content:center;padding:125px 8vw 72px;overflow:hidden;background:radial-gradient(ellipse at 80% 68%,rgba(82,103,35,.23),transparent 38%),radial-gradient(ellipse at 12% 8%,rgba(48,61,28,.28),transparent 36%),var(--bg)}
+.hero:after{content:"";position:absolute;width:min(68vw,900px);aspect-ratio:1;border:1px solid rgba(214,255,63,.16);border-radius:50%;right:-12%;top:14%;box-shadow:0 0 0 50px rgba(214,255,63,.018),0 0 0 110px rgba(214,255,63,.014);animation:orbit 28s linear infinite;pointer-events:none}
+.hero-top{position:absolute;top:108px;left:8vw;right:8vw;display:flex;justify-content:space-between;gap:20px;font:10px var(--mono);letter-spacing:.14em;color:var(--muted);text-transform:uppercase}.hero-top strong{color:var(--ink);font:700 11px var(--body);letter-spacing:.02em;text-transform:none}
+.eyebrow{display:flex;align-items:center;gap:12px;color:var(--lime);font:11px var(--mono);letter-spacing:.16em;margin:42px 0 22px}.eyebrow:before{content:"";width:34px;height:1px;background:var(--lime)}
+.hero-title{font:700 clamp(5rem,15.8vw,15.5rem)/.77 var(--display);letter-spacing:-.095em;margin:0;position:relative;z-index:1;text-transform:uppercase}.hero-title span{display:block;white-space:nowrap}.hero-title .second{color:var(--lime);padding-left:12vw}.hero-title .apostrophe{font-weight:400;color:var(--ink)}
+.hero-bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-top:55px;position:relative;z-index:2}.event-name{font-size:clamp(11px,1.2vw,15px);font-weight:800;letter-spacing:.12em;max-width:440px;line-height:1.6}.event-date{font:clamp(14px,2vw,20px) var(--mono);color:var(--lime);margin-top:14px}.slogan{font-size:clamp(15px,2vw,22px);font-weight:600;text-align:right}.slogan small{display:block;color:var(--muted);font:10px var(--mono);letter-spacing:.13em;margin-bottom:12px}.scroll-cue{position:absolute;bottom:26px;left:8vw;font:9px var(--mono);letter-spacing:.16em;color:var(--muted);display:flex;gap:13px;align-items:center}.scroll-cue b{color:var(--lime);font-size:17px;animation:bob 1.4s ease-in-out infinite}
+.hero-stamp{position:absolute;right:8vw;bottom:11%;width:112px;height:112px;border:1px solid rgba(214,255,63,.42);border-radius:50%;display:grid;place-items:center;text-align:center;color:var(--lime);font:9px/1.6 var(--mono);letter-spacing:.12em;transform:rotate(12deg);z-index:2}.hero-stamp:before{content:"";position:absolute;inset:8px;border:1px dashed rgba(214,255,63,.35);border-radius:50%}
+.marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--lime);color:#111;padding:17px 0;transform:rotate(-1deg) scale(1.02);position:relative;z-index:3}.marquee-track{display:flex;width:max-content;animation:marquee 28s linear infinite}.marquee span{font:700 14px var(--display);letter-spacing:.09em;padding:0 26px;white-space:nowrap}.marquee i{font-style:normal;font-size:18px}
+.section{padding:125px 8vw}.section-head{display:flex;justify-content:space-between;align-items:flex-start;gap:30px;margin-bottom:62px}.section-label{font:10px var(--mono);letter-spacing:.16em;color:var(--lime);margin-bottom:18px}.section-title{font:600 clamp(2.8rem,7vw,7rem)/.94 var(--display);letter-spacing:-.075em;margin:0;max-width:850px}.section-title em{font-style:normal;color:var(--lime)}.section-note{font-size:12px;line-height:1.8;color:var(--muted);max-width:220px;padding-top:40px}
+.program{background:linear-gradient(180deg,#10120e,#141810 55%,#10120e)}.filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 25px}.filter{border:1px solid var(--line);border-radius:99px;background:transparent;color:var(--muted);padding:10px 17px;font:10px var(--mono);letter-spacing:.06em;cursor:pointer;transition:.25s}.filter:hover,.filter.active{background:var(--lime);border-color:var(--lime);color:#111}
+.schedule-meta{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:15px 0;color:var(--muted);font:10px var(--mono);letter-spacing:.1em}.lesson-list{border-top:1px solid var(--line)}.lesson{display:grid;grid-template-columns:110px minmax(0,1fr) 240px;gap:25px;padding:30px 18px 31px 0;border-bottom:1px solid var(--line);position:relative;transition:background .35s,transform .35s;overflow:hidden}.lesson:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--lime);transform:scaleY(0);transform-origin:bottom;transition:transform .35s}.lesson:hover{background:rgba(214,255,63,.045);transform:translateX(7px)}.lesson:hover:before{transform:scaleY(1)}.lesson-number{font:12px var(--mono);color:var(--lime);padding:6px 0 0 13px}.lesson-number span{display:block;color:#6f7564;font-size:9px;margin-top:9px}.lesson-topic{font:600 clamp(1.35rem,2.5vw,2.45rem)/1.08 var(--display);letter-spacing:-.045em;margin:0 0 15px;max-width:680px}.teacher{font-size:12px;color:var(--muted)}.lesson-data{display:grid;grid-template-columns:1fr 1fr;gap:13px 18px;align-content:center}.data-item{font:10px/1.5 var(--mono);color:var(--muted)}.data-item b{display:block;color:var(--ink);font:600 12px var(--body);margin-top:4px}.data-item.time b{color:var(--lime);font:600 18px var(--mono)}.empty{padding:55px 0;color:var(--muted);font:12px var(--mono)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:center}.word-section{background:#d6ff3f;color:#111;position:relative;overflow:hidden}.word-section .section-label{color:#4a5c14}.word-section .section-title em{color:#647b1d}.word-intro{font-size:13px;line-height:1.8;max-width:370px;color:#3c4725;margin-top:22px}.word-card{background:#11140e;color:var(--ink);padding:38px;min-height:300px;position:relative;display:flex;flex-direction:column;justify-content:space-between;transform:rotate(1.5deg);box-shadow:16px 16px 0 rgba(17,20,14,.12)}.word-card:before{content:"";position:absolute;inset:12px;border:1px solid rgba(214,255,63,.2);pointer-events:none}.word-top{display:flex;justify-content:space-between;font:9px var(--mono);letter-spacing:.15em;color:var(--lime)}.word-main{font:700 clamp(3.5rem,7vw,6.5rem)/.9 var(--display);letter-spacing:-.08em;margin:25px 0 12px;overflow-wrap:anywhere}.word-translation{font-size:17px;color:var(--lime);font-weight:700}.word-definition{font-size:12px;line-height:1.7;color:#b7bdab;max-width:360px;margin-top:20px}.word-refresh{align-self:flex-end;background:transparent;border:1px solid rgba(214,255,63,.45);color:var(--lime);padding:10px 14px;font:9px var(--mono);letter-spacing:.1em;cursor:pointer;transition:.2s}.word-refresh:hover{background:var(--lime);color:#111}
+.facts{background:#151812}.facts-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:1px;background:var(--line);border:1px solid var(--line)}.fact{background:#151812;padding:30px;min-height:230px;display:flex;flex-direction:column;justify-content:space-between;transition:background .3s}.fact:hover{background:#20251a}.fact.big{grid-row:span 2;min-height:461px;background:radial-gradient(ellipse at 80% 15%,rgba(214,255,63,.13),transparent 40%),#151812}.fact-index{font:10px var(--mono);color:var(--lime)}.fact-number{font:700 clamp(3.5rem,7vw,7rem)/.9 var(--display);letter-spacing:-.09em;color:var(--lime);margin:40px 0 20px}.fact p{font-size:13px;line-height:1.8;color:var(--muted);max-width:360px;margin:0}.fact strong{color:var(--ink)}
+.challenge{background:radial-gradient(ellipse at 80% 50%,rgba(73,91,34,.2),transparent 38%),#10120e}.quiz{max-width:790px;margin-left:auto;border:1px solid var(--line);padding:clamp(25px,5vw,55px);position:relative}.quiz:before{content:"";position:absolute;top:-1px;left:0;width:90px;height:3px;background:var(--lime)}.quiz-label{font:10px var(--mono);letter-spacing:.16em;color:var(--lime)}.question{font:600 clamp(1.7rem,3.4vw,3rem)/1.15 var(--display);letter-spacing:-.04em;margin:35px 0}.blank{color:var(--lime);border-bottom:1px solid var(--lime);padding:0 8px}.answers{display:flex;gap:12px;flex-wrap:wrap}.answer{min-width:130px;border:1px solid var(--line);background:transparent;color:var(--ink);padding:16px 23px;text-align:left;cursor:pointer;transition:.2s}.answer b{color:var(--lime);font:11px var(--mono);margin-right:14px}.answer:hover:not(:disabled){border-color:var(--lime);background:rgba(214,255,63,.08);transform:translateY(-3px)}.answer.correct{background:var(--lime);color:#111;border-color:var(--lime)}.answer.correct b{color:#111}.answer.wrong{border-color:#ff796f;color:#ffaaa3;animation:shake .35s}.answer:disabled{cursor:default}.feedback{min-height:54px;margin-top:25px;font-size:12px;line-height:1.7;color:var(--muted)}.feedback.good{color:var(--lime)}.feedback.bad{color:#ff9b91}.try-again{display:none;margin-top:12px;border:0;border-bottom:1px solid var(--lime);padding:8px 0;background:none;color:var(--lime);font:10px var(--mono);cursor:pointer}
+.closing{min-height:78vh;padding:110px 8vw 65px;background:var(--lime);color:#111;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}.closing:after{content:"";position:absolute;width:48vw;aspect-ratio:1;border:1px solid rgba(17,20,14,.2);border-radius:50%;right:-10%;top:5%;box-shadow:0 0 0 45px rgba(17,20,14,.035),0 0 0 100px rgba(17,20,14,.025)}.closing-label{font:10px var(--mono);letter-spacing:.16em}.closing-title{font:700 clamp(4rem,12vw,12rem)/.78 var(--display);letter-spacing:-.095em;margin:75px 0;position:relative;z-index:1}.closing-title span{display:block}.closing-title span:nth-child(2){padding-left:12vw}.closing-title span:nth-child(3){color:#4b5f16}.closing-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;border-top:1px solid rgba(17,20,14,.35);padding-top:20px;font-size:12px;font-weight:800;position:relative;z-index:1}.closing-foot span:last-child{font:11px var(--mono);letter-spacing:.08em}
+footer{padding:22px 8vw;background:#10120e;color:var(--muted);display:flex;justify-content:space-between;gap:15px;font:9px var(--mono);letter-spacing:.1em}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}.reveal.visible{opacity:1;transform:translateY(0)}
+@keyframes marquee{to{transform:translateX(-50%)}}@keyframes bob{50%{transform:translateY(6px)}}@keyframes orbit{to{transform:rotate(360deg)}}@keyframes shake{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+@media(max-width:850px){.nav{height:66px}.nav-right a:not(.nav-index){display:none}.hero{padding-left:6vw;padding-right:6vw;min-height:900px;min-height:100svh}.hero-top{left:6vw;right:6vw;top:92px}.hero-title{font-size:clamp(4.4rem,17vw,9.5rem)}.hero-title .second{padding-left:5vw}.hero-bottom{align-items:flex-start;flex-direction:column;margin-top:42px}.slogan{text-align:left}.slogan small{margin-bottom:7px}.hero-stamp{width:84px;height:84px;right:7vw;bottom:9%;font-size:7px}.scroll-cue{left:6vw}.section{padding:90px 6vw}.section-head{display:block;margin-bottom:42px}.section-note{padding-top:18px}.lesson{grid-template-columns:68px minmax(0,1fr);gap:12px;padding:24px 8px 25px 0}.lesson-data{grid-column:2;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:5px}.data-item{font-size:9px}.data-item b{font-size:11px}.data-item.time b{font-size:15px}.split{grid-template-columns:1fr;gap:45px}.word-card{max-width:600px;width:100%;margin:auto}.facts-grid{grid-template-columns:1fr 1fr}.fact.big{grid-column:span 2;grid-row:auto;min-height:320px}.fact{min-height:210px}.closing{min-height:650px;padding:80px 6vw 45px}.closing-title{font-size:clamp(4rem,14vw,8rem)}footer{padding:20px 6vw}}
+@media(max-width:520px){.brand{font-size:10px;max-width:180px}.hero-top{font-size:8px}.hero-top strong{font-size:10px}.hero-title{font-size:17vw;letter-spacing:-.09em}.hero-title .second{padding-left:2vw}.eyebrow{font-size:9px;margin-top:22px}.hero-bottom{margin-top:34px}.event-name{font-size:10px;max-width:280px}.event-date{font-size:14px}.slogan{font-size:15px}.hero-stamp{display:none}.scroll-cue{bottom:20px}.section{padding:76px 6vw}.section-title{font-size:clamp(2.8rem,13vw,4.6rem)}.lesson{grid-template-columns:48px minmax(0,1fr);gap:8px;padding:22px 3px 22px 0}.lesson-number{font-size:10px;padding-left:8px}.lesson-topic{font-size:1.45rem}.teacher{font-size:11px}.lesson-data{grid-template-columns:1fr 1fr;gap:12px 8px}.data-item{font-size:9px}.data-item b{font-size:11px}.filters{gap:6px}.filter{padding:9px 12px;font-size:9px}.schedule-meta{font-size:8px}.word-card{padding:28px 24px;min-height:285px}.word-main{font-size:4rem}.facts-grid{grid-template-columns:1fr}.fact.big{grid-column:auto;min-height:280px}.fact{min-height:190px;padding:24px}.quiz{padding:26px 20px}.answers{display:grid;grid-template-columns:1fr 1fr}.answer{min-width:0;padding:14px 12px}.closing{min-height:590px}.closing-title{font-size:15vw}.closing-title span:nth-child(2){padding-left:5vw}.closing-foot{font-size:10px;align-items:flex-start;flex-direction:column}footer{font-size:8px;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="noise" aria-hidden="true"></div>
+<nav class="nav">
+  <a class="brand" href="#top">Д. ҚОНАЕВ АТЫНДАҒЫ<br>ЖАЛПЫ БІЛІМ БЕРЕТІН МЕКТЕП</a>
+  <div class="nav-right"><a href="#program">PROGRAM</a><a href="#word">WORD OF THE DAY</a><a href="#challenge">CHALLENGE</a><span class="nav-index">09—20 / 11 / 26</span></div>
+</nav>
+<header class="hero" id="top">
+  <div class="hero-top"><strong>D. Қонаев атындағы жалпы білім беретін мектеп</strong><span>A SCHOOL-WIDE LANGUAGE FESTIVAL / 2026</span></div>
+  <div class="eyebrow">A DECADE OF LANGUAGE & DISCOVERY</div>
+  <h1 class="hero-title"><span>ENGLISH</span><span class="second">WEEK <span class="apostrophe">’26</span></span></h1>
+  <div class="hero-bottom">
+    <div><div class="event-name">АҒЫЛШЫН ТІЛІ ПӘН БІРЛЕСТІГІНІҢ ОНКҮНДІГІ</div><div class="event-date">09—20 / 11 / 2026</div></div>
+    <div class="slogan"><small>OUR MAIN SLOGAN</small>Тіл үйрену — әлемді тану!</div>
+  </div>
+  <div class="hero-stamp">LANGUAGE<br>CONNECTS<br>WORLDS ✳<br>2026</div>
+  <a class="scroll-cue" href="#program">ТӨМЕН СЫРҒЫТЫҢЫЗ <b>↓</b></a>
+</header>
+<div class="marquee" aria-label="Festival motto"><div class="marquee-track">
+  <span>LEARN WITHOUT LIMITS <i>✳</i></span><span>SPEAK WITH CONFIDENCE <i>✳</i></span><span>THINK BIG <i>✳</i></span><span>EXPLORE THE WORLD <i>✳</i></span>
+  <span>LEARN WITHOUT LIMITS <i>✳</i></span><span>SPEAK WITH CONFIDENCE <i>✳</i></span><span>THINK BIG <i>✳</i></span><span>EXPLORE THE WORLD <i>✳</i></span>
+</div></div>
+
+<main>
+<section class="section program" id="program">
+  <div class="section-head reveal">
+    <div><div class="section-label">01 / THE PROGRAM</div><h2 class="section-title">Ашық сабақтар<br><em>бағдарламасы.</em></h2></div>
+    <p class="section-note">Nine lessons. Nine perspectives.<br>One shared language.<br><br>Choose a date to explore the programme.</p>
+  </div>
+  <div class="filters reveal" role="group" aria-label="Filter lessons by date">
+    <button class="filter active" data-date="all" aria-pressed="true">ALL LESSONS</button>
+    <button class="filter" data-date="10.11.2026" aria-pressed="false">10 NOV</button>
+    <button class="filter" data-date="13.11.2026" aria-pressed="false">13 NOV</button>
+    <button class="filter" data-date="17.11.2026" aria-pressed="false">17 NOV</button>
+    <button class="filter" data-date="18.11.2026" aria-pressed="false">18 NOV</button>
+    <button class="filter" data-date="19.11.2026" aria-pressed="false">19 NOV</button>
+  </div>
+  <div class="schedule-meta reveal"><span id="lesson-count">09 LESSONS</span><span>OPEN LESSONS / NOVEMBER 2026</span></div>
+  <div class="lesson-list" id="lesson-list" aria-live="polite"></div>
+</section>
+
+<section class="section word-section" id="word">
+  <div class="split">
+    <div class="reveal"><div class="section-label">02 / THINK IN ENGLISH</div><h2 class="section-title">A word can<br>open a <em>world.</em></h2><p class="word-intro">Build your vocabulary one word at a time. Discover a new English word every time you visit the page — and use it in your next conversation.</p></div>
+    <article class="word-card reveal" aria-live="polite">
+      <div class="word-top"><span>WORD OF THE DAY</span><span id="word-number">NO. 01</span></div>
+      <div><div class="word-main" id="word-en">Curiosity</div><div class="word-translation" id="word-kk">Қызығушылық</div><p class="word-definition" id="word-def">A strong desire to know or learn something.</p></div>
+      <button class="word-refresh" id="new-word" type="button">↻ &nbsp; NEW WORD</button>
+    </article>
+  </div>
+</section>
+
+<section class="section facts" id="facts">
+  <div class="section-head reveal"><div><div class="section-label">03 / LANGUAGE NOTES</div><h2 class="section-title">Did you <em>know?</em></h2></div><p class="section-note">A few fascinating details about the language we learn, share and use to connect.</p></div>
+  <div class="facts-grid reveal">
+    <article class="fact big"><span class="fact-index">FACT / 01</span><div><div class="fact-number">1,000M+</div><p><strong>English is spoken by more than a billion people</strong> worldwide, including native and second-language speakers. It connects people across borders, cultures and professions.</p></div></article>
+    <article class="fact"><span class="fact-index">FACT / 02</span><div><div class="fact-number">26</div><p>The modern English alphabet has <strong>26 letters</strong>, but the language uses more than 40 distinct speech sounds.</p></div></article>
+    <article class="fact"><span class="fact-index">FACT / 03</span><div><div class="fact-number">∞</div><p>New words keep appearing as technology, culture and everyday life change. <strong>Language is always evolving.</strong></p></div></article>
+    <article class="fact"><span class="fact-index">FACT / 04</span><div><div class="fact-number">1st</div><p>“I” is always written as a capital letter in English, even when it appears in the middle of a sentence.</p></div></article>
+    <article class="fact"><span class="fact-index">FACT / 05</span><div><div class="fact-number">World</div><p>English borrows words from many languages — a reminder that <strong>languages grow through connection.</strong></p></div></article>
+  </div>
+</section>
+
+<section class="section challenge" id="challenge">
+  <div class="section-head reveal"><div><div class="section-label">04 / TEST YOUR ENGLISH</div><h2 class="section-title">Small question.<br><em>Big confidence.</em></h2></div><p class="section-note">Take a quick challenge. Choose your answer and see the explanation instantly.</p></div>
+  <div class="quiz reveal">
+    <div class="quiz-label">MINI ENGLISH CHALLENGE / 01</div>
+    <div class="question">Choose the correct question form:<br><span class="blank">___</span> you like English?</div>
+    <div class="answers">
+      <button class="answer" data-answer="do"><b>A)</b> DO</button>
+      <button class="answer" data-answer="does"><b>B)</b> DOES</button>
+    </div>
+    <div class="feedback" id="feedback" role="status" aria-live="polite">Select an answer to reveal whether you are correct.</div>
+    <button class="try-again" id="try-again" type="button">↻ TRY AGAIN</button>
+  </div>
+</section>
+</main>
+<section class="closing">
+  <div class="closing-label">D. ҚОНАЕВ АТЫНДАҒЫ ЖАЛПЫ БІЛІМ БЕРЕТІН МЕКТЕП / 2026</div>
+  <h2 class="closing-title"><span>SEE YOU</span><span>AT ENGLISH</span><span>WEEK.</span></h2>
+  <div class="closing-foot"><span>Тіл үйрену — әлемді тану!</span><span>09—20 NOVEMBER 2026</span></div>
+</section>
+<footer><span>ENGLISH WEEK ’26 · LANGUAGE FESTIVAL</span><span>LEARN · SPEAK · EXPLORE</span></footer>
+
+<script>
+const lessons = [
+ {n:"01",topic:"Present Simple — Question Form",teacher:"Әлібек К.С.",grade:"5 «Б»",date:"13.11.2026",room:"331",period:"3-сабақ",time:"15:45"},
+ {n:"02",topic:"CLIL. Popular Team Sport",teacher:"Садық Ж.С.",grade:"4 «В»",date:"17.11.2026",room:"333",period:"5-сабақ",time:"11:30"},
+ {n:"03",topic:"Arts and Music",teacher:"Мырзабаева А.А.",grade:"4 «А»",date:"13.11.2026",room:"334",period:"2-сабақ",time:"08:50"},
+ {n:"04",topic:"CLIL. Popular Team Sport",teacher:"Оразова Т.А.",grade:"4 «Г»",date:"18.11.2026",room:"334",period:"4-сабақ",time:"10:35"},
+ {n:"05",topic:"Vocabulary: Travelling",teacher:"Арыстанбек Т.Б.",grade:"7 «А»",date:"10.11.2026",room:"333",period:"1-сабақ",time:"14:00"},
+ {n:"06",topic:"Listening and Speaking",teacher:"Наурызбаева А.Е.",grade:"11 «В»",date:"17.11.2026",room:"334",period:"2-сабақ",time:"08:50"},
+ {n:"07",topic:"Creative Work: I Can Talk About Famous Kazakhstan",teacher:"Қаныбекова Т.Е.",grade:"5 «А»",date:"18.11.2026",room:"334",period:"3-сабақ",time:"15:45"},
+ {n:"08",topic:"My Country: National Parks",teacher:"Асанова А.Н.",grade:"6 «Б»",date:"18.11.2026",room:"334",period:"2-сабақ",time:"14:55"},
+ {n:"09",topic:"My Country: Adventure Holidays",teacher:"Смат М.Ғ.",grade:"7 «Б»",date:"19.11.2026",room:"333",period:"4-сабақ",time:"16:40"}
+];
+const list = document.getElementById("lesson-list");
+const count = document.getElementById("lesson-count");
+function renderLessons(date="all"){
+ const shown = date==="all" ? lessons : lessons.filter(x=>x.date===date);
+ count.textContent = String(shown.length).padStart(2,"0")+" LESSON"+(shown.length===1?"":"S");
+ list.innerHTML = shown.length ? shown.map(x=>`
+  <article class="lesson">
+   <div class="lesson-number">LESSON<span>${x.n} / 09</span></div>
+   <div><h3 class="lesson-topic">${x.topic}</h3><div class="teacher">${x.teacher}</div></div>
+   <div class="lesson-data">
+    <div class="data-item">GRADE<b>${x.grade}</b></div>
+    <div class="data-item">CLASSROOM<b>${x.room}</b></div>
+    <div class="data-item">DATE<b>${x.date}</b></div>
+    <div class="data-item">PERIOD<b>${x.period}</b></div>
+    <div class="data-item time">TIME<b>${x.time}</b></div>
+   </div>
+  </article>`).join("") : '<div class="empty">NO LESSONS SCHEDULED FOR THIS DATE.</div>';
+}
+renderLessons();
+document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{
+ document.querySelectorAll(".filter").forEach(b=>{b.classList.remove("active");b.setAttribute("aria-pressed","false")});
+ btn.classList.add("active");btn.setAttribute("aria-pressed","true");renderLessons(btn.dataset.date);
+}));
+
+const words=[
+ ["Curiosity","Қызығушылық","A strong desire to know or learn something."],
+ ["Courage","Батылдық","The ability to do something difficult or face a challenge."],
+ ["Discover","Ашу, жаңалық табу","To find something new or learn something for the first time."],
+ ["Fluent","Еркін сөйлейтін","Able to speak a language easily and smoothly."],
+ ["Journey","Саяхат; сапар","The act of travelling from one place to another."],
+ ["Improve","Жақсарту","To make something better than before."],
+ ["Explore","Зерттеу","To travel through or investigate a place or idea."],
+ ["Confidence","Сенімділік","The feeling that you can do something well."],
+ ["Creative","Шығармашыл","Having the ability to make new or original things."],
+ ["Opportunity","Мүмкіндік","A situation that makes it possible to do something."]
+];
+let lastWord=-1;
+function nextWord(){
+ let index;do{index=Math.floor(Math.random()*words.length)}while(words.length>1&&index===lastWord);lastWord=index;
+ const w=words[index];document.getElementById("word-en").textContent=w[0];document.getElementById("word-kk").textContent=w[1];document.getElementById("word-def").textContent=w[2];document.getElementById("word-number").textContent="NO. "+String(index+1).padStart(2,"0");
+}
+document.getElementById("new-word").addEventListener("click",nextWord);nextWord();
+
+const answerButtons=[...document.querySelectorAll(".answer")];
+const feedback=document.getElementById("feedback"),retry=document.getElementById("try-again");
+answerButtons.forEach(btn=>btn.addEventListener("click",()=>{
+ const correct=btn.dataset.answer==="do";
+ answerButtons.forEach(b=>{b.disabled=true;if(b.dataset.answer==="do")b.classList.add("correct")});
+ if(correct){feedback.className="feedback good";feedback.textContent="✓ Correct! “Do” is used with you, I, we and they in the Present Simple. The correct question is: “Do you like English?”";}
+ else{btn.classList.add("wrong");feedback.className="feedback bad";feedback.textContent="Not quite. The correct answer is DO. We use “do” with you, I, we and they. “Does” is used with he, she and it.";}
+ retry.style.display="inline-block";
+}));
+retry.addEventListener("click",()=>{answerButtons.forEach(b=>{b.disabled=false;b.classList.remove("correct","wrong")});feedback.className="feedback";feedback.textContent="Select an answer to reveal whether you are correct.";retry.style.display="none"});
+
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
